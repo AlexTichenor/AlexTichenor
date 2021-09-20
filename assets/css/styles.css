@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poller+One&family=Roboto&family=Podkova&display=swap");
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url("../fonts/poetsen-one.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+section.section-title {
+  margin-bottom: 4rem;
+  height: 6rem;
+  background-color: white;
+  text-align: center;
+}
+
+section.section-title h2 {
+  font-size: 5rem;
+  font-family: 'Poller One', cursive;
+}
+
+@media screen and (max-width: 768px) {
+  section.section-title h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  section.section-title h2 {
+    font-size: 3rem;
+    padding: 0rem 1rem;
+  }
+}
+
+section.header {
+  text-align: center;
+}
+
+section.header .header-bg {
+  height: 35rem;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+}
+
+section.header .header-bg .portrait {
+  pointer-events: none;
+  position: absolute;
+  top: 22rem;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+section.header .social {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+}
+
+section.header .social .social-link {
+  padding: 1.5rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+section.header .social .social-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.header .introduction {
+  font-family: 'Merriweather', serif;
+  font-size: 2.25rem;
+  margin-top: 3.5rem;
+  padding: 0rem 7rem;
+}
+
+@media screen and (max-width: 1000px) {
+  section.header .introduction {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.header .introduction {
+    font-size: 1.35rem;
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  section.header .introduction {
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+  }
+}
+
+section.header .introduction .intro-name {
+  font-family: 'Poller One', cursive;
+}
+
+section.bio {
+  text-align: center;
+}
+
+section.bio .bio-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25rem;
+  padding: 4rem 8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  section.bio .bio-text {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.bio .bio-text {
+    font-size: 1.35rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  section.bio .bio-text {
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+  }
+}
+
+section.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 2rem;
+}
+
+section.skills .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 6rem;
+}
+
+section.skills .skill-list .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+section.skills .skill-list .skill i {
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+section.skills .skill-list .skill:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.featured-projects {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+section.featured-projects .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+}
+
+section.featured-projects .projects-container .project h3 {
+  margin-bottom: 2rem;
+  font-family: 'PoetsenOne';
+  font-size: 3.5rem;
+}
+
+section.heating-up-dfs .hudfs-header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.heating-up-dfs .hudfs-header.hudfs-intro {
+  background-image: url(../images/projects/heating-up-dfs-cover.jpg);
+}
+
+section.heating-up-dfs .hudfs-purpose {
+  background-image: url(../images/projects/light_bulb.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.heating-up-dfs .hudfs-purpose .purpose-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem;
+  padding: 0rem 5rem;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+section.heating-up-dfs .hudfs-purpose .purpose-top .purpose-img {
+  width: 30%;
+  height: auto;
+}
+
+section.heating-up-dfs .hudfs-purpose .purpose-top h2 {
+  font-family: 'Poller One', cursive;
+  padding-top: 3rem;
+}
+
+section.heating-up-dfs .hudfs-purpose .purpose-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  padding: 5rem;
+  font-family: 'Merriweather', serif;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin: 5rem;
+}
+
+section.heating-up-dfs .hudfs-app-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  background-color: #F2994A;
+}
+
+section.heating-up-dfs .hudfs-app-details .hudfs-details-title {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section.heating-up-dfs .hudfs-app-details .hudfs-details {
+  padding: 10rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Merriweather', serif;
+  gap: 5rem;
+  font-size: 1.5rem;
+}
+
+section.heating-up-dfs .hudfs-app-details .hudfs-details .hudfs-details-img {
+  width: 40vw;
+}
+
+section.heating-up-dfs .hudfs-screenshots {
+  margin-top: 2rem;
+}
+
+section.heating-up-dfs .hudfs-screenshots h2 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section.heating-up-dfs .hudfs-screenshots .hudfs-screenshots-img {
+  margin-top: 4rem;
+  height: 40rem;
+  background-image: url(../images/projects/hudfs-screenshots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+section.heating-up-dfs .hudfs-userflow h2 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+  margin-bottom: -2.5rem;
+  margin-top: 6rem;
+}
+
+section.heating-up-dfs .hudfs-userflow .userflow-graphic {
+  height: 60rem;
+  margin-top: 5rem;
+  background-image: url(../images/projects/hudfs-userflow.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.ido .ido-details-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D68609), to(rgba(214, 134, 9, 0)));
+  background: linear-gradient(180deg, #D68609 0%, rgba(214, 134, 9, 0) 100%);
+  min-width: 100%;
+  margin-top: -10rem;
+  padding: 5rem;
+}
+
+section.ido .ido-details-container .ido-details-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.ido .ido-details-container .ido-details-text hr {
+  border: none;
+  height: 0.25rem;
+  width: 10rem;
+  background-color: black;
+  margin: 0;
+  margin: 1rem 0rem;
+}
+
+section.ido .ido-details-container .ido-details-text h3 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section.ido .ido-details-container .ido-details-text .ido-quote {
+  color: white;
+  font-family: 'Poller One', cursive;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+section.ido .ido-details-container .ido-list {
+  font-family: 'PoetsenOne';
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+section.ido .ido-details-container .ido-list li.ido-list-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+section.ido .ido-screenshots {
+  margin-top: 20rem;
+  padding: 3rem;
+  padding-bottom: 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#FBC2EB), to(#A6C1EE));
+  background: linear-gradient(90deg, #FBC2EB 0%, #A6C1EE 100%);
+}
+
+section.ido .ido-screenshots .ido-screenshots-img {
+  margin-top: 3rem;
+  height: 40rem;
+  background-image: url(../images/projects/ido-screenshots.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.ido .ido-screenshots h3 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section .ido-testimonal {
+  background: #c4c4c4;
+  padding: 3rem;
+}
+
+section .ido-testimonal .ido-testimonal-text {
+  color: white;
+  font-family: 'Poller One', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section .ido-testimonal .ido-testimonal-text h3 {
+  font-size: 2.5rem;
+}
+
+section .ido-testimonal .ido-testimonal-text p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+section .ido-client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  font-family: 'Merriweather', serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .ido-client-info h3 {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+section .ido-client-info img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section .ido-client-info .demo-table {
+  margin-top: 1.5rem;
+}
+
+section .ido-client-info .demo-table td {
+  padding: 1rem 3rem;
+}
+
+section .client-info-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+section .client-info-container:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+section .client-info-container.no-border {
+  border: unset;
+}
+
+section .identity-item {
+  text-align: left;
+  padding: 2rem 3rem;
+}
+
+section .identity-item h3 {
+  margin-bottom: 2rem;
+}
+
+section .personality-items {
+  text-align: left;
+  padding: 2rem 2rem;
+  max-width: 28.5rem;
+}
+
+section .personality-items .meter-labels {
+  margin: 3rem 0.5rem 0rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .personality-items .personality-meter {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  height: 1.5rem;
+  width: 25rem;
+}
+
+section .personality-items .personality-meter .meter-progress {
+  height: 1.5rem;
+  width: 5rem;
+  background: #f211c1;
+}
+
+section .journey-map-header {
+  background: #d68609;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .journey-map-header h2 {
+  font-size: 4rem;
+  font-family: 'Poller One', cursive;
+}
+
+section .journey-map {
+  height: 50rem;
+  background-image: url(../images/projects/journey_map.png);
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.quiksplit {
+  background: #fad634;
+  padding: 4rem;
+}
+
+section.quiksplit h2 {
+  font-size: 4rem;
+  font-family: 'Poller One', cursive;
+  text-align: center;
+}
+
+section.quiksplit .quiksplit-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem;
+}
+
+section.quiksplit .quiksplit-details .quiksplit-details-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.quiksplit .quiksplit-details .quiksplit-details-row p {
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.quiksplit .quiksplit-details .quiksplit-details-row:last-child {
+  margin-top: 4rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section#kendall-martin-header {
+  margin-bottom: 0rem;
+  text-align: left;
+  background-color: #fad634;
+  padding: 5rem 0rem 5rem 8rem;
+  padding-bottom: 10rem;
+}
+
+section .green-gradient-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#D4FC79), to(#96E6A1));
+  background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+}
+
+section .poller-one-font {
+  font-family: 'Poller One', cursive;
+}
+
+section.quiksplit-userflow-diagram .quiksplit-userflow-diagram-img {
+  height: 80rem;
+  background-image: url(../images/projects/quiksplit-userflow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.quiksplit-demo .quiksplit-screenshots {
+  padding: 3rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#D4FC79), to(#96E6A1));
+  background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+}
+
+section.quiksplit-demo .quiksplit-screenshots .quiksplit-screenshots-img {
+  margin-top: 3rem;
+  height: 40rem;
+  background-image: url(../images/projects/quiksplit-screenshots.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.quiksplit-demo .quiksplit-screenshots h3 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section.fahreheit-info {
+  background: #FF6F00;
+  padding: 8rem;
+}
+
+section.fahreheit-info h2 {
+  text-align: center;
+  font-family: 'Poller One', cursive;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+section.fahreheit-info .fahreheit-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10rem;
+}
+
+section.fahreheit-info .fahreheit-details p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  text-align: right;
+}
+
+section .no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+section.fahreheit-userflow-diagram .fahreheit-userflow-diagram-img {
+  height: 80rem;
+  background-image: url(../images/projects/fahreheint-userflow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.challenges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.challenges .challenges-details {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.challenges .challenges-details h2 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+  text-align: right;
+  padding-left: 10rem;
+}
+
+section.challenges .challenges-details p {
+  margin-top: 2rem;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  padding-left: 20rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 1100px) {
+  .hudfs-details {
+    padding-top: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 941px) {
+  .ido-details-container {
+    padding: unset;
+  }
+  .ido-details-container .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 10rem;
+  }
+  .ido-details-container .row .com-sm-12 {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.featured-projects {
+    margin-top: -15rem;
+    margin-bottom: -20rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  section.ido .ido-screenshots .ido-screenshots-img {
+    margin-top: 0rem;
+  }
+  section.heating-up-dfs div.hudfs-purpose .purpose-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  section.heating-up-dfs div.hudfs-purpose .purpose-top h2 {
+    padding: unset;
+  }
+  section.heating-up-dfs div.hudfs-purpose .purpose-top .purpose-img {
+    width: 80%;
+  }
+  section.heating-up-dfs div.hudfs-purpose .purpose-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+    margin: 5rem;
+  }
+  section.heating-up-dfs div.hudfs-purpose .purpose-bottom .purpose-text {
+    padding: unset;
+  }
+  .ido-client-info img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  section.featured-projects {
+    margin-top: -50rem;
+    margin-bottom: -50rem;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .purpose-bottom p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
