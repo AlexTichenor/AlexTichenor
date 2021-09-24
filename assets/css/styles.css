@@ -184,14 +184,14 @@ section.skills .skill-list .skill {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Merriweather', serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 section.skills .skill-list .skill i {
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -219,6 +219,7 @@ section.featured-projects .projects-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 5rem;
+  margin-top: 10rem;
 }
 
 section.featured-projects .projects-container .project h3 {
@@ -269,11 +270,6 @@ section.heating-up-dfs .hudfs-purpose .purpose-top {
   padding: 0rem 5rem;
   padding-top: 5rem;
   margin-bottom: 5rem;
-}
-
-section.heating-up-dfs .hudfs-purpose .purpose-top .purpose-img {
-  width: 30%;
-  height: auto;
 }
 
 section.heating-up-dfs .hudfs-purpose .purpose-top h2 {
@@ -332,10 +328,6 @@ section.heating-up-dfs .hudfs-app-details .hudfs-details {
   font-size: 1.5rem;
 }
 
-section.heating-up-dfs .hudfs-app-details .hudfs-details .hudfs-details-img {
-  width: 40vw;
-}
-
 section.heating-up-dfs .hudfs-screenshots {
   margin-top: 2rem;
 }
@@ -346,12 +338,8 @@ section.heating-up-dfs .hudfs-screenshots h2 {
 }
 
 section.heating-up-dfs .hudfs-screenshots .hudfs-screenshots-img {
-  margin-top: 4rem;
-  height: 40rem;
-  background-image: url(../images/projects/hudfs-screenshots.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 section.heating-up-dfs .hudfs-userflow h2 {
@@ -359,15 +347,6 @@ section.heating-up-dfs .hudfs-userflow h2 {
   font-size: 4rem;
   margin-bottom: -2.5rem;
   margin-top: 6rem;
-}
-
-section.heating-up-dfs .hudfs-userflow .userflow-graphic {
-  height: 60rem;
-  margin-top: 5rem;
-  background-image: url(../images/projects/hudfs-userflow.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 section.ido .ido-details-container {
@@ -469,9 +448,24 @@ section .ido-testimonal .ido-testimonal-text h3 {
   font-size: 2.5rem;
 }
 
-section .ido-testimonal .ido-testimonal-text p {
+section .ido-testimonal .ido-testimonal-text .ido-quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section .ido-testimonal .ido-testimonal-text .ido-quotes p {
+  padding: 1rem;
   margin-top: 1rem;
   font-size: 1.5rem;
+  word-wrap: break-word;
 }
 
 section .ido-client-info {
@@ -542,8 +536,7 @@ section .identity-item h3 {
 
 section .personality-items {
   text-align: left;
-  padding: 2rem 2rem;
-  max-width: 28.5rem;
+  padding: 2rem 0rem;
 }
 
 section .personality-items .meter-labels {
@@ -560,7 +553,6 @@ section .personality-items .personality-meter {
   margin-bottom: 2rem;
   border: 1px solid black;
   height: 1.5rem;
-  width: 25rem;
 }
 
 section .personality-items .personality-meter .meter-progress {
@@ -663,6 +655,11 @@ section .poller-one-font {
   font-family: 'Poller One', cursive;
 }
 
+section.quiksplit-userflow-diagram {
+  background: -webkit-gradient(linear, left top, right top, from(#D4FC79), to(#96E6A1));
+  background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+}
+
 section.quiksplit-userflow-diagram .quiksplit-userflow-diagram-img {
   height: 80rem;
   background-image: url(../images/projects/quiksplit-userflow.jpg);
@@ -730,6 +727,11 @@ section .no-bottom-margin {
   margin-bottom: 0 !important;
 }
 
+section.fahreheit-userflow-diagram {
+  background: -webkit-gradient(linear, left top, right top, from(#A18CD1), to(#FBC2EB));
+  background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+}
+
 section.fahreheit-userflow-diagram .fahreheit-userflow-diagram-img {
   height: 80rem;
   background-image: url(../images/projects/fahreheint-userflow.jpg);
@@ -763,20 +765,63 @@ section.challenges .challenges-details {
 
 section.challenges .challenges-details h2 {
   font-family: 'Poller One', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: right;
-  padding-left: 10rem;
 }
 
 section.challenges .challenges-details p {
   margin-top: 2rem;
   font-family: 'Merriweather', serif;
-  font-size: 2rem;
-  padding-left: 20rem;
+  font-size: 1.5rem;
   text-align: right;
 }
 
 @media screen and (max-width: 1100px) {
+  section.challenges {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.challenges .challenges-details {
+    padding: 1rem;
+  }
+  section.challenges .challenges-details h2 {
+    font-size: 2rem;
+    padding-left: 0rem;
+  }
+  section.challenges .challenges-details p {
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
+  section.fahreheit-info {
+    padding: 0rem;
+  }
+  section.fahreheit-info .fahreheit-details p {
+    font-size: 1rem;
+  }
+  section#kendall-martin-header {
+    padding: 0rem;
+  }
+  section.quiksplit {
+    padding: 1rem;
+    margin-bottom: -1px !important;
+  }
+  section.quiksplit .quiksplit-details {
+    padding: 1rem;
+  }
+  section.quiksplit .quiksplit-details .quiksplit-details-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.quiksplit .quiksplit-details .quiksplit-details-row:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .hudfs-details {
     padding-top: 0rem;
     -webkit-box-pack: center;
@@ -788,10 +833,16 @@ section.challenges .challenges-details p {
 }
 
 @media screen and (max-width: 941px) {
-  .ido-details-container {
-    padding: unset;
+  section.ido .container {
+    padding: 0rem;
   }
-  .ido-details-container .row {
+  section.ido .journey-map-header {
+    padding: 1.5rem;
+  }
+  section.ido .ido-details-container {
+    padding: 3rem;
+  }
+  section.ido .ido-details-container .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -805,22 +856,51 @@ section.challenges .challenges-details p {
             flex-direction: column-reverse;
     gap: 10rem;
   }
-  .ido-details-container .row .com-sm-12 {
+  section.ido .ido-details-container .row .com-sm-12 {
     padding: 0rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  section.featured-projects {
-    margin-top: -15rem;
-    margin-bottom: -20rem;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+  section.quiksplit-demo .quiksplit-screenshots h3 {
+    font-size: 2rem;
+  }
+  section.fahreheit-info {
+    padding: 1rem;
+  }
+  section.fahreheit-info .fahreheit-details {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.fahreheit-info .fahreheit-details p {
+    font-size: 1.25rem;
+  }
+  section#kendall-martin-header {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  section#kendall-martin-header h2 {
+    font-size: 3rem !important;
+  }
+  section.quiksplit h2 {
+    font-size: 3rem;
+  }
+  section.ido .ido-testimonal {
+    padding: 1rem;
+    text-align: center;
+  }
+  section.ido .ido-testimonal .ido-testimonal-text .ido-quotes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section.ido .ido-screenshots .ido-screenshots-img {
     margin-top: 0rem;
   }
   section.heating-up-dfs div.hudfs-purpose .purpose-top {
+    padding: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -834,19 +914,26 @@ section.challenges .challenges-details p {
   section.heating-up-dfs div.hudfs-purpose .purpose-top h2 {
     padding: unset;
   }
-  section.heating-up-dfs div.hudfs-purpose .purpose-top .purpose-img {
-    width: 80%;
-  }
   section.heating-up-dfs div.hudfs-purpose .purpose-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 3rem;
-    margin: 5rem;
+    padding: 1rem;
+    margin: 0rem;
   }
   section.heating-up-dfs div.hudfs-purpose .purpose-bottom .purpose-text {
     padding: unset;
+  }
+  section.heating-up-dfs .hudfs-app-details {
+    padding: 1rem 2rem;
+  }
+  section.heating-up-dfs .hudfs-app-details .hudfs-details-title {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  section.heating-up-dfs .hudfs-app-details h2 {
+    font-size: 3rem;
   }
   .ido-client-info img {
     max-width: 100%;
@@ -854,11 +941,8 @@ section.challenges .challenges-details p {
 }
 
 @media screen and (max-width: 530px) {
-  section.featured-projects {
-    margin-top: -50rem;
-    margin-bottom: -50rem;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+  section#kendall-martin-header h2 {
+    font-size: 2rem !important;
   }
   .purpose-bottom p {
     font-size: 1rem;
