@@ -307,7 +307,7 @@ section.heating-up-dfs .hudfs-app-details {
           flex-direction: column;
   text-align: center;
   padding: 5rem;
-  background-color: #F2994A;
+  background-color: #fff;
 }
 
 section.heating-up-dfs .hudfs-app-details .hudfs-details-title {
@@ -323,9 +323,17 @@ section.heating-up-dfs .hudfs-app-details .hudfs-details {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Merriweather', serif;
   gap: 5rem;
   font-size: 1.5rem;
+}
+
+section.heating-up-dfs .hudfs-app-details .hudfs-details .hudfs-details-text {
+  max-width: 40rem;
+  text-align: right;
 }
 
 section.heating-up-dfs .hudfs-screenshots {
@@ -354,7 +362,23 @@ section.ido .ido-details-container {
   background: linear-gradient(180deg, #D68609 0%, rgba(214, 134, 9, 0) 100%);
   min-width: 100%;
   margin-top: -10rem;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+section.ido .ido-details-container .ido-details-header h3 {
+  font-family: 'Poller One', cursive;
+  font-size: 4rem;
+}
+
+section.ido .ido-details-container .ido-details-header hr {
+  border: none;
+  height: 0.25rem;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  margin: 1rem 0rem;
 }
 
 section.ido .ido-details-container .ido-details-text {
@@ -379,11 +403,6 @@ section.ido .ido-details-container .ido-details-text hr {
   margin: 1rem 0rem;
 }
 
-section.ido .ido-details-container .ido-details-text h3 {
-  font-family: 'Poller One', cursive;
-  font-size: 4rem;
-}
-
 section.ido .ido-details-container .ido-details-text .ido-quote {
   color: white;
   font-family: 'Poller One', cursive;
@@ -392,9 +411,11 @@ section.ido .ido-details-container .ido-details-text .ido-quote {
 }
 
 section.ido .ido-details-container .ido-list {
+  float: right;
+  text-align: right;
+  list-style-position: inside;
   font-family: 'PoetsenOne';
   font-size: 1.25rem;
-  text-align: right;
 }
 
 section.ido .ido-details-container .ido-list li.ido-list-item:not(:last-child) {
@@ -439,9 +460,9 @@ section .ido-testimonal .ido-testimonal-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section .ido-testimonal .ido-testimonal-text h3 {
@@ -459,6 +480,7 @@ section .ido-testimonal .ido-testimonal-text .ido-quotes {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0rem 3rem;
 }
 
 section .ido-testimonal .ido-testimonal-text .ido-quotes p {
@@ -600,42 +622,21 @@ section.quiksplit h2 {
   text-align: center;
 }
 
-section.quiksplit .quiksplit-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5rem;
-}
-
-section.quiksplit .quiksplit-details .quiksplit-details-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section.quiksplit .quiksplit-details .quiksplit-details-row p {
-  padding: 2rem;
-  font-size: 1.4rem;
+section.quiksplit .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
 }
 
-section.quiksplit .quiksplit-details .quiksplit-details-row:last-child {
-  margin-top: 4rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+section.quiksplit .row .col-md-6 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section#kendall-martin-header {
@@ -699,7 +700,7 @@ section.fahreheit-info h2 {
   text-align: center;
   font-family: 'Poller One', cursive;
   font-size: 3rem;
-  margin-bottom: 8rem;
+  padding: 5rem 0rem;
 }
 
 section.fahreheit-info .fahreheit-details {
@@ -712,15 +713,18 @@ section.fahreheit-info .fahreheit-details {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10rem;
+  padding: 2rem;
+}
+
+section.fahreheit-info .fahreheit-details .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.fahreheit-info .fahreheit-details p {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-family: 'Merriweather', serif;
-  font-size: 2rem;
-  text-align: right;
+  font-size: 1.5rem;
 }
 
 section .no-bottom-margin {
@@ -774,6 +778,10 @@ section.challenges .challenges-details p {
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
   text-align: right;
+}
+
+section.challenges img {
+  max-height: 50rem;
 }
 
 @media screen and (max-width: 1100px) {
